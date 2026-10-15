@@ -30,7 +30,7 @@ export default function ContentPage({ config }: { config: PageConfig }) {
                 <span className="icon-tile icon-tile-dark"><Icon name={config.icon} size={24} /></span>
                 <span className="eyebrow-text">AccyBooks</span>
                 <h2>Clear workflows. Connected context.</h2>
-                <p>Designed for modern accounting operations without unverified claims or unnecessary complexity.</p>
+                <p>Built for the way accounting work actually gets done: organized, reviewable, and connected.</p>
               </div>
             )}
           </div>
@@ -53,12 +53,12 @@ export default function ContentPage({ config }: { config: PageConfig }) {
         <div className="wrap split-grid">
           <div>
             <span className="eyebrow-text">Common questions</span>
-            <h2 id="page-faq-title">Clear answers before your walkthrough.</h2>
+            <h2 id="page-faq-title">Questions before your demo?</h2>
           </div>
           <div className="details-list">
-            <details><summary>Is this workflow available for a live product review?</summary><p>A tailored demo can focus on the currently available product areas most relevant to your practice.</p></details>
-            <details><summary>Does AccyBooks replace professional review?</summary><p>No. AccyBooks is designed to organize context and workflow status while preserving professional judgment and review.</p></details>
-            <details><summary>Can we discuss our specific process?</summary><p>Yes. The demo request includes space to describe your current workflow and the areas you want to improve.</p></details>
+            <details><summary>Can I see this in a live demo?</summary><p>Yes. Your walkthrough will focus on the currently available product areas that matter most to your practice.</p></details>
+            <details><summary>Does AccyBooks replace professional review?</summary><p>No. AccyBooks organizes records and workflow status so your team can work efficiently. Professional judgment and review stay with you.</p></details>
+            <details><summary>Can we discuss our specific process?</summary><p>Yes. The demo request lets you describe your current workflow and the areas you want to improve, so we can tailor the session.</p></details>
           </div>
         </div>
       </section>
@@ -67,7 +67,7 @@ export default function ContentPage({ config }: { config: PageConfig }) {
         <div className="wrap split-grid">
           <div>
             <span className="eyebrow-text">Keep exploring</span>
-            <h2 id="page-links-title">Find the next useful view.</h2>
+            <h2 id="page-links-title">Explore related pages.</h2>
           </div>
           <ul className="link-list">
             {config.links.map(([label, href]) => <li key={label}><a href={href}>{label}<Icon name="arrow" size={17} /></a></li>)}

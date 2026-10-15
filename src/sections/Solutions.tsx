@@ -4,17 +4,17 @@ import SectionHeading from "../components/SectionHeading";
 import TiltCard from "../components/TiltCard";
 
 const items: [string, string, string, IconName, string][] = [
-  ["Accounting firms", "See firm-wide work clearly", "Create consistency across client workflows, team coordination, and review.", "briefcase", "accounting-firms"],
-  ["Bookkeepers", "Keep every transaction organized", "Move efficiently through records, reconciliations, and month-end work.", "book", "bookkeepers"],
-  ["Finance teams", "Build confidence in reporting", "Bring account structure, financial statements, and review into focus.", "chart", "finance-teams"],
+  ["Accounting firms", "See firm-wide work at a glance", "Standardize client workflows, coordinate your team, and keep partner review focused where it matters.", "briefcase", "accounting-firms"],
+  ["Bookkeepers", "Keep every client's books current", "Move efficiently through transactions, reconciliations, and month-end close for every client.", "book", "bookkeepers"],
+  ["Finance teams", "Report with confidence", "Bring account structure, financial statements, and review into one clear process.", "chart", "finance-teams"],
 ];
 
 export default function Solutions() {
   return (
     <section className="section section-navy solutions" id="solutions" aria-labelledby="solutions-title">
       <div className="wrap">
-        <SectionHeading kicker="Made for accounting work" title={<>Different roles.<br />One source of clarity.</>} id="solutions-title" tone="dark">
-          <p>AccyBooks adapts to the way accounting professionals organize, review, and deliver work.</p>
+        <SectionHeading kicker="Who it's for" title={<>Different roles.<br />One source of clarity.</>} id="solutions-title" tone="dark">
+          <p>Whether you lead a multi-partner firm or run an independent bookkeeping practice, AccyBooks fits the way you organize, review, and deliver client work.</p>
           <Button variant="ghost-light" href="/solutions/accounting-firms">Explore solutions</Button>
         </SectionHeading>
         <div className="solution-list">

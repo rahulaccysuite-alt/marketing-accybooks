@@ -19,7 +19,7 @@ export default function ArticlePage({ path }: { path: string }) {
           <span className="eyebrow-text">{article.eyebrow}</span>
           <h1>{article.title}</h1>
           <p className="hero-lead">{article.description}</p>
-          <div className="article-meta">AccyBooks Editorial · Practice Guidance · Updated for current workflows</div>
+          <div className="article-meta">AccyBooks Editorial · Practice guide</div>
         </header>
         <div className="article-layout">
           <aside aria-label="On this page">
@@ -35,7 +35,7 @@ export default function ArticlePage({ path }: { path: string }) {
               </div>
             ))}
             <div className="article-cta">
-              <h3>See how AccyBooks connects the workflow.</h3>
+              <h3>See how AccyBooks brings this workflow together.</h3>
               <Button href="/book-a-demo">Book a demo</Button>
             </div>
           </article>

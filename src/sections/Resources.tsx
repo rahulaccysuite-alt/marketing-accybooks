@@ -4,16 +4,16 @@ import SectionHeading from "../components/SectionHeading";
 import TiltCard from "../components/TiltCard";
 
 const articles = [
-  ["A practical guide to bank reconciliation", "Guide", 5, "/resources/bank-reconciliation-guide"],
-  ["Organizing client financial records", "Operations", 6, "/resources/client-financial-records"],
-  ["Understanding GST/HST filing workflows", "Compliance", 7, "/resources/gst-hst-workflows"],
+  ["A practical guide to bank reconciliation", "Guide", 2, "/resources/bank-reconciliation-guide"],
+  ["Organizing client financial records", "Operations", 1, "/resources/client-financial-records"],
+  ["Understanding GST/HST filing workflows", "Compliance", 1, "/resources/gst-hst-workflows"],
 ] as const;
 
 export default function Resources() {
   return (
     <section className="section resources" id="resources" aria-labelledby="resources-title">
       <div className="wrap">
-        <SectionHeading kicker="Practical thinking for modern practices" title="Workflows worth reading about." id="resources-title">
+        <SectionHeading kicker="Guides and resources" title="Practical guides for better accounting workflows." id="resources-title">
           <Button variant="secondary" href="/resources">View all resources</Button>
         </SectionHeading>
         <div className="resource-grid">
@@ -22,9 +22,9 @@ export default function Resources() {
               <div className="art-window depth"><span /><span /><span /><b /><b /><b /></div>
             </div>
             <div className="featured-resource-body">
-              <span className="eyebrow-text">Featured guide · 8 min read</span>
+              <span className="eyebrow-text">Featured guide · 2 min read</span>
               <h3>How to improve accounting practice workflows</h3>
-              <p>A practical framework for creating more visibility, consistency, and control across recurring client work.</p>
+              <p>A practical framework for bringing more visibility, consistency, and control to recurring client work.</p>
               <a className="card-link" href="/resources/improve-accounting-workflows">Read the guide <Icon name="arrow" size={16} /></a>
             </div>
           </TiltCard>

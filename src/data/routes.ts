@@ -11,11 +11,11 @@ export type RouteMeta = {
 };
 
 export const staticPageMeta = {
-  "/": { title: "Accounting Practice Management", description: "Manage clients, bookkeeping, reconciliation, compliance, and reporting from one connected AccyBooks workspace." },
-  "/pricing": { title: "Pricing", description: "Compare editable AccyBooks plan placeholders, capabilities, and common pricing questions." },
-  "/book-a-demo": { title: "Book a Demo", description: "Request a tailored walkthrough of the AccyBooks accounting practice management platform." },
-  "/integrations": { title: "Integrations", description: "Explore confirmed product workflows and planned AccyBooks integration categories." },
-  "/resources": { title: "Resources", description: "Practical AccyBooks guides for clearer accounting workflows, reconciliation, compliance, and client operations." },
+  "/": { title: "Bookkeeping & Compilation Software for CPA Firms", description: "Bookkeeping, bank reconciliation, compliance, and financial statements in one workspace built for accounting firms and bookkeepers in Canada and the U.S." },
+  "/pricing": { title: "Pricing & Plans", description: "Compare AccyBooks plans for independent practitioners, growing practices, and established accounting firms. Contact our team for current pricing." },
+  "/book-a-demo": { title: "Book a Demo", description: "Request a personalized walkthrough of AccyBooks and see how it handles bookkeeping, reconciliation, compliance, and reporting for your practice." },
+  "/integrations": { title: "Integrations", description: "See which AccyBooks connections are available today, planned, or under evaluation, including CSV and OFX transaction file imports." },
+  "/resources": { title: "Accounting Workflow Guides & Resources", description: "Practical guides on bank reconciliation, client financial records, GST/HST filing workflows, and running a more efficient accounting practice." },
 } satisfies Record<string, { title: string; description: string }>;
 
 export const notFoundMeta = { title: "Page not found", description: "The page you are looking for does not exist or has moved." };
@@ -37,7 +37,7 @@ export function getRouteMeta(pathname: string): RouteMeta | null {
   }
 
   const config = pageRoutes[path];
-  if (config) return { title: config.eyebrow, description: config.description, canonicalPath: path, indexable: true };
+  if (config) return { title: config.seoTitle ?? config.eyebrow, description: config.description, canonicalPath: path, indexable: true };
 
   const featureIndex = featureDestinations.indexOf(path);
   if (featureIndex >= 0) {

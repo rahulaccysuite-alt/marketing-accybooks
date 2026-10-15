@@ -15,9 +15,9 @@ const nav: [string, string][] = [
 ];
 
 const megaMenus: Record<string, { icon: IconName; title: string; copy: string; links: [string, string][] }> = {
-  Platform: { icon: "grid", title: "One connected workspace", copy: "Bring client work, financial operations, and reporting into clear view.", links: [["Platform overview", "/platform"], ["Firm dashboard", "/#platform"], ["Connected workflows", "/#workflow"]] },
-  Features: { icon: "spark", title: "Focused accounting workflows", copy: "Explore practical tools for client, reconciliation, and reporting work.", links: [["Bank reconciliation", "/features/bank-reconciliation"], ["Client management", "/features/client-management"], ["Financial reporting", "/features/financial-reporting"]] },
-  Solutions: { icon: "briefcase", title: "Built around your practice", copy: "Purposeful workflows for accounting professionals.", links: [["Accounting firms", "/solutions/accounting-firms"], ["Bookkeepers", "/solutions/bookkeepers"], ["Finance teams", "/solutions/finance-teams"]] },
+  Platform: { icon: "grid", title: "One connected workspace", copy: "Client work, bookkeeping, and reporting in one clear view.", links: [["Platform overview", "/platform"], ["Firm dashboard", "/#platform"], ["Connected workflows", "/#workflow"]] },
+  Features: { icon: "spark", title: "Tools for everyday accounting work", copy: "Reconciliation, client management, and reporting that work together.", links: [["Bank reconciliation", "/features/bank-reconciliation"], ["Client management", "/features/client-management"], ["Financial reporting", "/features/financial-reporting"]] },
+  Solutions: { icon: "briefcase", title: "Built around your practice", copy: "Workflows for accounting firms, bookkeepers, and finance teams.", links: [["Accounting firms", "/solutions/accounting-firms"], ["Bookkeepers", "/solutions/bookkeepers"], ["Finance teams", "/solutions/finance-teams"]] },
 };
 
 export default function Header() {

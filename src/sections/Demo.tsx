@@ -17,10 +17,10 @@ export default function Demo({ standalone = false }: { standalone?: boolean }) {
       <div className="wrap demo-grid">
         <div className="demo-copy">
           <span className="eyebrow"><span className="eyebrow-icon"><Icon name="spark" size={14} /></span>See AccyBooks in action</span>
-          <Heading id="demo-title">Bring your whole practice into clearer view.</Heading>
-          <p>Explore how connected workflows can help your team spend less time navigating tools—and more time moving client work forward.</p>
+          <Heading id="demo-title">See how AccyBooks fits your practice.</Heading>
+          <p>Get a personalized walkthrough of how one connected workspace can help your team spend less time switching between tools and more time moving client work forward.</p>
           <ul className="check-list check-list-strong">
-            {["A walkthrough tailored to your practice", "Clear answers to your workflow questions", "No commitment required"].map((x) => (
+            {["A walkthrough tailored to your workflow", "Straight answers to your practice questions", "No commitment required"].map((x) => (
               <li key={x}><span className="check-badge"><Icon name="check" size={12} /></span>{x}</li>
             ))}
           </ul>
@@ -33,8 +33,8 @@ export default function Demo({ standalone = false }: { standalone?: boolean }) {
           {status === "success" ? (
             <div className="form-success" role="status">
               <span><Icon name="check" size={24} /></span>
-              <h3>Frontend success state</h3>
-              <p>Your request was validated for this preview. No information was sent or stored.</p>
+              <h3>Almost there</h3>
+              <p>Online demo requests aren't connected yet, so your details have not been sent. Please email hello@accybooks.com and we'll schedule your walkthrough.</p>
               <button type="button" className="btn btn-secondary" onClick={() => setStatus("idle")}><span>Return to form</span></button>
             </div>
           ) : (
@@ -43,8 +43,8 @@ export default function Demo({ standalone = false }: { standalone?: boolean }) {
                 <label>First name<input required name="firstName" autoComplete="given-name" placeholder="First name" /></label>
                 <label>Last name<input required name="lastName" autoComplete="family-name" placeholder="Last name" /></label>
               </div>
-              <label>Work email<input required type="email" name="email" autoComplete="email" placeholder="you@company.com" /></label>
-              <label>Company<input required name="company" autoComplete="organization" placeholder="Practice or company name" /></label>
+              <label>Work email<input required type="email" name="email" autoComplete="email" placeholder="you@yourfirm.com" /></label>
+              <label>Company<input required name="company" autoComplete="organization" placeholder="Firm or company name" /></label>
               <label>Role
                 <select required name="role" defaultValue="">
                   <option value="" disabled>Select your role</option>
@@ -55,14 +55,14 @@ export default function Demo({ standalone = false }: { standalone?: boolean }) {
                   <option>Other</option>
                 </select>
               </label>
-              <label>What would you like to improve?<textarea required name="message" rows={3} placeholder="Tell us a little about your current workflow" /></label>
+              <label>What would you like to improve?<textarea required name="message" rows={3} placeholder="Tell us about your current workflow and what slows your team down" /></label>
               {status === "error" && <p className="form-error" role="alert">Please review the highlighted information and try again.</p>}
               <button type="submit" className="btn btn-primary btn-block" disabled={status === "loading"}>
-                <span>{status === "loading" ? "Validating preview…" : "Request your demo"}</span>
+                <span>{status === "loading" ? "Checking your details…" : "Request your demo"}</span>
                 <Icon name="arrow" size={17} />
               </button>
               <button type="button" className="text-btn" onClick={() => setStatus("error")}>Preview error state</button>
-              <p className="fine-print">Frontend demonstration only. This form does not send or store your information.</p>
+              <p className="fine-print">Online booking is not connected yet and this form does not send or store your details. To book now, email hello@accybooks.com.</p>
             </>
           )}
         </form>

@@ -3,9 +3,9 @@ import Icon, { type IconName } from "../components/Icon";
 const items: [string, string, IconName][] = [
   ["Banking", "Planned", "bank"],
   ["CSV / OFX", "Product workflow", "document"],
-  ["Accounting data", "Availability to confirm", "book"],
+  ["Accounting data", "Under evaluation", "book"],
   ["Email & productivity", "Planned", "briefcase"],
-  ["Data export", "Availability to confirm", "report"],
+  ["Data export", "Under evaluation", "report"],
 ];
 
 export default function IntegrationStrip() {
@@ -13,8 +13,8 @@ export default function IntegrationStrip() {
     <section className="integration-strip" aria-label="Integration categories">
       <div className="wrap strip-inner">
         <div className="strip-intro">
-          <span className="eyebrow-text">Connect your work</span>
-          <b>Integration availability, clearly labeled.</b>
+          <span className="eyebrow-text">Integrations</span>
+          <b>See what's live and what's next.</b>
         </div>
         <ul className="strip-items">
           {items.map(([name, status, icon]) => (

@@ -45,7 +45,7 @@ export default function App() {
           description,
           icon,
           focus: focusForFeature[featureIndex],
-          pillars: [["Keep context connected", "Bring the relevant records and current work into one focused workflow."], ["Review with clarity", "Keep exceptions and next steps visible for professional review."], ["Explore your workflow", "Request a walkthrough to confirm how this capability fits your practice."]],
+          pillars: [["Connected to the work", "Relevant client records and current tasks stay together in one focused view."], ["Built for review", "Exceptions, open items, and next steps stay visible for professional review."], ["See it in your workflow", "Book a walkthrough to see how this capability fits the way your practice works."]],
           links: [["Explore all features", "/#features"], ["See the platform", "/#platform"], ["Request a demo", "/book-a-demo"]],
         }}
       />

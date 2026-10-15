@@ -1,19 +1,19 @@
 import SectionHeading from "../components/SectionHeading";
 
 const steps = [
-  ["Connect", "Bring your workspace and client records together."],
-  ["Organize", "Structure transactions and bookkeeping activity."],
-  ["Review", "Resolve reconciliations and exceptions."],
-  ["Complete", "Manage compliance and financial reporting."],
-  ["Monitor", "See work clearly from your central dashboard."],
+  ["Connect", "Set up your firm workspace and bring client records together."],
+  ["Organize", "Import bank activity and categorize transactions."],
+  ["Review", "Reconcile accounts and resolve exceptions."],
+  ["Complete", "Prepare financial statements and track compliance work."],
+  ["Monitor", "Track progress across every client from one dashboard."],
 ];
 
 export default function Workflow() {
   return (
     <section className="section workflow" id="workflow" aria-labelledby="workflow-title">
       <div className="wrap">
-        <SectionHeading kicker="One connected workflow" title={<>From client records to confident reporting.</>} id="workflow-title">
-          <p>A deliberate flow keeps the right work visible at every stage—without introducing another layer of complexity.</p>
+        <SectionHeading kicker="How it works" title="From bank statements to financial statements in five steps." id="workflow-title">
+          <p>A clear, repeatable process keeps every engagement moving and every review point visible, without adding another layer of complexity.</p>
         </SectionHeading>
         <ol className="timeline">
           {steps.map(([title, copy], i) => (

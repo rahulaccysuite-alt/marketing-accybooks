@@ -31,15 +31,15 @@ export default function Hero() {
     <section className="hero" id="top" aria-labelledby="hero-title">
       <div className="wrap hero-grid">
         <div className="hero-copy">
-          <span className="eyebrow"><span className="eyebrow-icon"><Icon name="spark" size={14} /></span>NEW — The Next Generation of Accounting.</span>
-          <h1 id="hero-title">From bank statements to compiled financials in minutes, not hours <em>in one workplace.</em></h1>
-          <p className="hero-lead">Automate bookkeeping, streamline client workflows, and transform financial data into review-ready reports — all in one AI-powered platform built for Canadian accounting firms.</p>
+          <span className="eyebrow"><span className="eyebrow-icon"><Icon name="spark" size={14} /></span>Bookkeeping · Reconciliation · Compilation</span>
+          <h1 id="hero-title">From bank statements to compiled financial statements <em>in minutes, not hours</em>{"\u00a0"}—<br />in one workplace.</h1>
+          <p className="hero-lead">Turn bank statements into reconciled books and review-ready financial statements in one AI-powered workspace, built for accounting firms and bookkeepers in Canada and the U.S.</p>
           <div className="hero-actions">
             <Button href="#demo">Book a demo</Button>
             <Button href="#platform" variant="secondary">See how it works</Button>
           </div>
           <ul className="hero-benefits">
-            {["GIFI-mapped chart of accounts", "CSRS 4200 compilation-ready", "Exports to ProFile & TaxPrep"].map((item) => (
+            {["GIFI-mapped chart of accounts", "Built for CSRS 4200 compilations", "Exports to ProFile & TaxPrep"].map((item) => (
               <li key={item}><span className="check-badge"><Icon name="check" size={12} /></span>{item}</li>
             ))}
           </ul>

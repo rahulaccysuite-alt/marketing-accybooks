@@ -51,8 +51,8 @@ export default function Features() {
           <h3>{title}</h3>
           <p>{copy}</p>
           <FeaturePreview index={index} icon={icon} />
-          <a className="card-link" href={featureDestinations[index]} aria-label={`Explore feature: ${title}`}>
-            Explore Feature <Icon name="arrow" size={16} />
+          <a className="card-link" href={featureDestinations[index]} aria-label={`Learn more: ${title}`}>
+            Learn more <Icon name="arrow" size={16} />
           </a>
         </TiltCard>
       ),
@@ -62,8 +62,8 @@ export default function Features() {
   return (
     <section className="section section-dark feature-section" id="features" aria-labelledby="features-title">
       <div className="wrap">
-        <SectionHeading kicker="Capabilities that work together" title="Everything Your Accounting Practice Needs" id="features-title" tone="dark">
-          <p>Manage clients, bookkeeping, reconciliation, compliance, and reporting from one connected workspace.</p>
+        <SectionHeading kicker="Platform capabilities" title="The core tools your practice runs on, connected." id="features-title" tone="dark">
+          <p>Manage client records, bookkeeping, bank reconciliation, compliance, and financial reporting without stitching together separate apps.</p>
         </SectionHeading>
       </div>
       <FeatureCarousel id="feature-track" label="AccyBooks features" slides={slides} />

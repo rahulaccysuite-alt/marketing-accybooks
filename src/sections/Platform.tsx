@@ -28,8 +28,8 @@ export default function Platform() {
   return (
     <section className="section section-cool platform" id="platform" aria-labelledby="platform-title">
       <div className="wrap">
-        <SectionHeading kicker="The AccyBooks platform" title="See AccyBooks in Action" id="platform-title">
-          <p>Move through daily client work with less friction. AccyBooks connects the records, workflows, and reporting that keep your practice moving.</p>
+        <SectionHeading kicker="The AccyBooks platform" title="See how AccyBooks works" id="platform-title">
+          <p>Follow client work from the first transaction to the final report. Every view is connected, so context travels with the work.</p>
         </SectionHeading>
 
         <div className="tabs" role="tablist" aria-label="Platform features">

@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="wrap footer-main">
         <div className="footer-brand">
           <Logo inverse />
-          <p>A connected workspace for clearer accounting practice management.</p>
+          <p>One connected workspace for bookkeeping, reconciliation, compliance, and financial reporting.</p>
           <a href="mailto:hello@accybooks.com">hello@accybooks.com</a>
         </div>
         {columns.map(([title, links]) => (
@@ -28,7 +28,7 @@ export default function Footer() {
       <div className="wrap footer-bottom">
         <span>© {new Date().getFullYear()} AccyBooks. All rights reserved.</span>
         <div><a href="/contact">Privacy enquiries</a><a href="/contact">Terms enquiries</a></div>
-        <span>Built for clarity.</span>
+        <span>Built for accounting professionals.</span>
       </div>
     </footer>
   );
